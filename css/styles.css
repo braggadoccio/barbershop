@@ -184,6 +184,12 @@ body {
 .hero-wrap {
   flex-grow: 1;
   padding: 272px 100px 208px;
+
+  background-image: url(../images/hero-bg.jpg),
+    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-list {
@@ -273,7 +279,12 @@ body {
 
 /* Services and Prices Section */
 .prices {
-  background-color: var(--primary-background-color);
+  max-width: 1600px;
+  margin: 0 auto;
+  background: url(../images/prices2.png), linear-gradient(#111319, #111319);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .prices-top-text {
@@ -286,22 +297,31 @@ body {
 
 .prices-wrap {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .prices-list {
-  border: 1px solid var(white);
+  /*border: 1px solid var(white);*/
   padding: 30px 20px;
-  width: calc(100% - 30px / 2);
+  width: calc((100% - 30px) / 2);
+}
+
+.prices-list:first-child {
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 36, 0.2) 100%);
+}
+
+.prices-item: :last-child {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 
 .prices-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-}
-
-.prcies-item: :last-child {
-  margin-bottom: 0;
 }
 
 .prices-item-text {
@@ -408,7 +428,7 @@ body {
 }
 
 .barbers-item-text {
-  margin-bottom: 30px
+  margin-bottom: 30px;
   color: var(--primary-orange-color);
   text-align: center;
   font-size: 14px;
@@ -433,13 +453,14 @@ body {
 }
 
 .portfolio-item {
-  width: calc(100% - 90px/4)
+  width: calc(100% - 90px / 4);
 }
 
 /* Contacts Wrap*/
 .contacts-wrap {
   background-color: #191c26;
-  /*margin: 0 auto;*/
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .contacts-wrap-container {

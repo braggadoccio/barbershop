@@ -56,7 +56,12 @@ body {
   overflow: hidden;
 }
 
-/* remove bullet points in lists */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* General Elements: remove bullet points in lists */
 .list {
   list-style: none;
 }
@@ -121,10 +126,10 @@ body {
 /* END of General Styles */
 /* header section */
 .header {
+  padding-top: 32px;
   background-color: var(--primary-background-color);
 }
 
-/* For Recheck */
 .header-container {
   display: flex;
   align-items: center;
@@ -196,12 +201,6 @@ body {
 .hero-wrap {
   flex-grow: 1;
   padding: 272px 100px 208px;
-
-  background-image: url(../images/hero-bg.jpg),
-    linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .hero-list {
@@ -258,7 +257,7 @@ body {
 }
 
 .about-wrap {
-  padding: 100px;
+  padding-right: 100px;
 }
 
 .about-item {
@@ -277,7 +276,7 @@ body {
 }
 
 .about-text {
-  color: var(--primary-background-color);
+  color: var(--primary-black-color);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -291,12 +290,7 @@ body {
 
 /* Services and Prices Section */
 .prices {
-  max-width: 1600px;
-  margin: 0 auto;
-  background: url(../images/prices2.png), linear-gradient(#111319, #111319);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: var(--primary-background-color);
 }
 
 .prices-top-text {
@@ -313,24 +307,19 @@ body {
 }
 
 .prices-list {
-  /*border: 1px solid var(white);*/
+  border: 1px solid var(white);
   padding: 30px 20px;
   width: calc((100% - 30px) / 2);
 }
 
-.prices-list:first-child {
-  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 36, 0.2) 100%);
-}
-
-.prices-item: :last-child {
+.prices-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  background-image: linear-gradient(
-    180deg,
-    #090b13 0%,
-    rgba(9, 11, 19, 0.2) 100%
-  );
+}
+
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 
 .prices-item-text {
@@ -345,7 +334,7 @@ body {
 .prices-button {
   display: block;
   margin: 0 auto;
-  color: var(--primary-text-color);
+  color: var(--primary-white-color);
   background-color: transparent;
 }
 
@@ -384,7 +373,7 @@ body {
 
 .benefits-item-text {
   color: var(--primary-black-color);
-  text-align: start;
+  text-align: center;
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
@@ -465,11 +454,11 @@ body {
   width: calc(100% - 90px / 4);
 }
 
-/* Contacts Wrap*/
+/* Contacts Wrap */
 .contacts-wrap {
   background-color: #191c26;
-  max-width: 1600px;
-  margin: 0 auto;
+  /* max-width: 1600px;
+  margin: 0 auto; */
 }
 
 .contacts-wrap-container {

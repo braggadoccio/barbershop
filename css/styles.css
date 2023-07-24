@@ -569,7 +569,7 @@ body {
 
 .contacts-wrap-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* Booking Section */

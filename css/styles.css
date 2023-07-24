@@ -533,6 +533,11 @@ body {
   fill: currentColor;
 }
 
+.barbers-social-link:hover,
+.barbers-social-link:focus {
+  background-color: var(--primary-orange-color);
+}
+
 /* Portfolio Section */
 .portfolio {
   background-color: var(--primary-white-color);
@@ -579,7 +584,7 @@ body {
 
 /* Contacts Section */
 .contacts {
-  background-color: var(--primary-black-color);
+  background-color: var(--primary-background-color);
 }
 
 .contacts-title {
@@ -597,6 +602,9 @@ body {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: var(--primary-gray-color);
   font-size: 18px;
   font-style: normal;
@@ -611,6 +619,11 @@ body {
 
 .contacts-bottom-text {
   color: var(--primary-gray-color);
+}
+
+.contacts-icon {
+  fill: none;
+  stroke: currentColor;
 }
 
 /* Footer */

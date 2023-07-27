@@ -207,7 +207,7 @@ body {
   background-image: url(../images/hero-bg.jpg),
     linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
   background-repeat: no-repeat;
-  /*background-position: right;*/
+  background-position: right;
   background-size: 89% 100%;
 }
 
@@ -215,9 +215,12 @@ body {
   display: flex;
 }
 
-.hero-wrap {
-  flex-grow: 1;
-  padding: 272px 100px 208px;
+.hero-socials {
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 27px;
+  padding-bottom: 40px;
 }
 
 .hero-list {
@@ -258,6 +261,10 @@ body {
   color: var(--primary-gray-color);
 }
 
+.hero-wrap {
+  flex-grow: 1;
+  padding: 272px 100px 208px;
+}
 /* ABOUT SECTION */
 .about {
   background-color: var(--primary-white-color);

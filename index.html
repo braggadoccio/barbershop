@@ -10,11 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!--AOS Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!--CSS Normalizer-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    <!--Animate-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!--CSS-->
     <link rel="stylesheet" href="./css/styles.css" />
@@ -83,7 +91,9 @@
           </div>
           <div class="hero-wrap">
             <p class="hero-top-text top-text">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
+            <h1 class="hero-title animate__animated animate__shakeY">
+              BarberShop
+            </h1>
             <p class="hero-bottom-text bottom-text">
               We are experts in trendy men's haircuts. <br />
               We work quickly, carefully, and tastefully.
@@ -115,7 +125,7 @@
           </ul>
           <div class="about-wrap">
             <p class="about-top-text top-text">About</p>
-            <h2 class="about-title section-title">
+            <h2 class="about-title section-title" data-aos="fade-up">
               The Best Barbershop in Your City
             </h2>
             <p class="about-bottom-text bottom text">
@@ -144,7 +154,9 @@
           <p class="prices-top-text top-text">
             Spend time in the company of the best craftsmen
           </p>
-          <h2 class="prices-title section-title">Services and Prices</h2>
+          <h2 class="prices-title section-title" data-aos="zoom-in">
+            Services and Prices
+          </h2>
           <div class="prices-wrap">
             <ul class="prices-list list">
               <li class="prices-item">
@@ -214,7 +226,7 @@
           </ul>
           <div>
             <p class="benefits-top-text top-text">Old school</p>
-            <h2 class="benefits-title section-title">
+            <h2 class="benefits-title section-title" data-aos="flip-left">
               Why do they come to us?
             </h2>
             <p class="benefits-bottom-text bottom-text">
@@ -231,7 +243,9 @@
           <p class="barbers-top-text top-text">
             for true connoisseurs of the atmosphere
           </p>
-          <h2 class="barbers-title section-title">Our Barbers</h2>
+          <h2 class="barbers-title section-title" data-aos="flip-up">
+            Our Barbers
+          </h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
               <div class="barbers-cover-wrap">
@@ -544,5 +558,13 @@
         </ul>
       </div>
     </footer>
+
+    <!--AOS Script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Initialize AOS-->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

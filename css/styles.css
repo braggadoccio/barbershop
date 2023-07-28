@@ -132,6 +132,16 @@ body {
   letter-spacing: 1.08px;
   text-transform: uppercase;
   cursor: pointer;
+
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--primary-orange-color);
 }
 
 /* END of General Styles */
@@ -193,9 +203,14 @@ body {
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* For Recheck */
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--primary-orange-color);
+}
+
 .header-button {
   margin-left: 40px;
   color: var(--primary-white-color);
@@ -236,6 +251,7 @@ body {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 2.2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-link:hover,
@@ -488,6 +504,14 @@ body {
 
 .barbers-item {
   width: calc(100% - 60px / 3);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* box-shadow: m<x-offset> m<y-offset> <blur> <spread> <color>*/
+.barbers-item:hover,
+.barbers-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0ox 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .barbers-cover-wrap {
@@ -505,7 +529,7 @@ body {
   color: var(--primary-white-color);
   background-color: var(--primary-orange-color);
   transform: translateY(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .barbers-item:hover .barbers-cover-text {

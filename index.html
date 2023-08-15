@@ -480,6 +480,41 @@
           <!--Booking-->
           <section class="booking">
             <h2 class="booking-title section-title">Book a Service</h2>
+
+            <!--Booking Form-->
+            <form name="booking-form">
+              <div class="booking-wrap">
+                <label class="booking-field"
+                  ><input
+                    class="booking-input"
+                    type="text"
+                    name="booking-name"
+                    placeholder="Mike Quilantang"
+                    required
+                  /><span class="booking-label">Name*</span></label
+                >
+                <label class="booking-field"
+                  ><input
+                    class="booking-input"
+                    type="tel"
+                    name="booking-name"
+                    placeholder="8645-4697"
+                    required
+                  /><span class="booking-label">Phone*</span></label
+                >
+              </div>
+              <label class="booking-field">
+                <textarea
+                  class="booking-textarea"
+                  name="booking-message"
+                  rows="8"
+                  placeholder="What's on your thoughts"
+                ></textarea
+                ><span class="booking-label">Message</span></label
+              >
+
+              <button class="button booking-button" type="submit">Send</button>
+            </form>
           </section>
 
           <!--Contacts Section *Check Class=Contacts Link-->
@@ -589,7 +624,7 @@
             <span class="form-label">Email</span>
             <input class="form-input" type="email" name="user-email" />
             <svg class="form-icon" width="24" height="24">
-              <use href="./images/logos.svg#icon-mail"></use>
+              <use href="./images/logos.svg#email-icon"></use>
             </svg>
           </label>
 
@@ -602,8 +637,14 @@
               placeholder="Text input"
             ></textarea>
           </label>
-          <label class="form-agreements">
-            <input class="form-checkbox" type="checkbox" name="user-terms" />
+          <label class="form-agreement">
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="user-terms"
+            /><svg class="checkbox-icon" width="16" height="16">
+              <use href="./images/logos.svg#checkbox-icon"></use>
+            </svg>
             <span
               >I accept the terms and conditions of the
               <a class="form-terms" href="">Privacy Policy</a></span

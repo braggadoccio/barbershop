@@ -644,12 +644,75 @@ body {
 .booking {
   background-color: #191c26;
   width: calc(50% - 15px);
+  margin-right: 80px;
+  margin-left: -20px;
 }
 
 .booking-title {
   color: var(--primary-white-color);
 }
 
+.booking-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-field {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.booking-input,
+.booking-textarea {
+  display: block;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  outline: transparent;
+  color: var(--primary-white-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.booking-input {
+  width: 270px;
+  height: 24px;
+}
+
+.booking-label {
+  position: absolute;
+  top: -10px;
+  color: var(--primary-gray-color);
+  font-weight: 600px;
+  font-size: 11px;
+  line-height: 0.87;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.booking-input::placeholder,
+.booking-textarea::placeholder {
+  font-size: 10px;
+  color: var(--primary-white-color);
+}
+
+.booking-input:not(:placeholder-shown) + .booking-label,
+.booking-input:focus + .booking-label,
+.booking-texarea:not(:placeholder-shown) + .booking-label,
+.booking-textarea:focus + .booking-label {
+  transform: translateY(-100%);
+}
+
+.booking-textarea {
+  width: 100%;
+  resize: none;
+  margin-bottom: 40px;
+}
+
+.booking-button {
+  color: var(--primary-white-color);
+}
 /* Contacts Section */
 .contacts {
   background-color: var(--primary-background-color);
@@ -880,6 +943,33 @@ body {
 
 .form-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.form-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox-icon {
+  fill: none;
+  border: 2px solid var(--primary-gray-color);
+  border-radius: 2px;
+  margin-right: 7px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox:checked + .checkbox-icon {
+  background-color: var(--primary-orange-color);
+  border: var(--primary-orange-color);
+  fill: var(--primary-white-color);
+}
+
+.form-terms {
+  color: var(--primary-orange-color);
 }
 .button-center {
   display: block;

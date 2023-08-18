@@ -60,6 +60,89 @@
         <button class="header-button button" type="button" data-modal-open>
           Book a Service
         </button>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-icon" width="32" height="32">
+            <use href="./images/logo.svg#icon-hamburger-open"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="32" height="32">
+              <use href="./images/logos.svg#icon-hamburger-close"></use>
+            </svg>
+          </button>
+          <!--Mobile Navigation-->
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#about">About</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#prices">Services and Prices</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#barbers">Barbers</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+
+          <!--Mobile Address-->
+          
+          <address class="mob-address">
+            <a class="mob-address-link link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+          </address>
+          <button class="mob-button button" type="button" data-modal-open>
+            Book a Service
+          </button>
+        
+        <ul class="mob-social-list list">
+          <li class="mob-social-item">
+            <a
+              class="mob-social-link link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="barbers-social-icon" width="20" height="20">
+                <use href="./images/logos.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="mob-social-item">
+            <a
+              class="mob-social-link link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-social-icon" width="20" height="20">
+                <use href="./images/logos.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+          <li class="mob-social-item">
+            <a
+              class="mob-social-link link"
+              href="https://facebool.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-social-icon" width="20" height="20">
+                <use href="./images/logos.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="mob-social-item">
+            <a
+              class="mob-social-link link"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="mob-social-icon" width="20" height="20">
+                <use href="./images/logos.svg#icon-linkedin"></use></svg
+            ></a>
+          </li>
+        </ul>
+        </div>
       </div>
     </header>
     <!--MAIN-->
@@ -664,5 +747,8 @@
 
     <!--Modal Script-->
     <script src="./js/modal.js"></script>
+
+    <!--Hamburger Menu Script-->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

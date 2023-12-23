@@ -76,8 +76,12 @@ body {
 }
 
 .section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  /* @media screen and (min-width: 768px) {
+    width: 768px;
+  } */
 
   @media screen and (min-width: 1158px) {
     padding-top: 120px;
@@ -431,7 +435,29 @@ body {
 
 .about-container {
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
+  height: 540px;
+
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+    height: 705px;
+  }
+
+  /* @media screen and (min-width: 1158px) {
+    height: 695px;
+  } */
+}
+
+/* .break-common {
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1158px) {
+    display: flex;
+  }
 }
 
 .break-mobile {
@@ -448,7 +474,19 @@ body {
   @media screen and (min-width: 768px) {
     display: flex;
   }
+
+  @media screen and (min-width: 1158px) {
+    display: none;
+  }
 }
+
+.break-desktop {
+  display: none;
+
+  @media screen and (min-width: 1158px) {
+    display: flex;
+  }
+} */
 
 .about-list {
   display: none;
@@ -465,6 +503,7 @@ body {
 
 .about-wrap {
   padding: 30px 6px;
+  width: 480px;
 
   @media screen and (min-width: 1158px) {
     padding-right: 100px;

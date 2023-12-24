@@ -721,8 +721,13 @@ body {
 
 .benefits-container {
   display: flex;
-  padding-left: 85px;
-  gap: 130px;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: 1158px) {
+    flex-direction: row;
+    padding-left: 85px;
+    gap: 130px;
+  }
 }
 
 .benefits-list {
@@ -732,11 +737,19 @@ body {
 }
 
 .benefits-item {
-  width: 170px;
+  width: 193px;
   height: 133px;
   padding: 20px 24px;
   background-color: var(--secondary-background-color);
   box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+
+  @media screen and (min-width: 768px) {
+    width: 210px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 170px;
+  }
 }
 
 .benefits-item:nth-child(odd) {
@@ -746,6 +759,7 @@ body {
 .benefits-item:nth-child(even) {
   margin-top: 30px;
 }
+
 .benefits-item-count {
   display: block;
   text-align: center;
@@ -779,10 +793,17 @@ body {
 
 .benefits-title {
   color: var(--primary-black-color);
+  width: 280px;
 }
 
 .benefits-bottom-text {
   color: var(--primary-text-color);
+  width: 400px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.36px;
 }
 
 /* Our Barbers */

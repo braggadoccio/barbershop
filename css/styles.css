@@ -77,7 +77,7 @@ body {
 
 .section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 
   /* @media screen and (min-width: 768px) {
     width: 768px;
@@ -982,18 +982,34 @@ body {
 
 /* Contacts Wrap */
 .contacts-wrap {
-  margin: 0 auto;
-  max-width: 1600px;
+  max-width: 480px;
   background-color: #191c26;
   background-image: url(../images/contacts-bg.png);
   background-repeat: no-repeat;
   /* background-size: calc(50%-10px) 100%; */
-  background-position: right;
+  background-position: bottom;
+  background-size: contain;
+  /* padding-top: 60px; */
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    /* margin: 0 auto; */
+    max-width: 1600px;
+    background-position: right;
+  }
 }
 
 .contacts-wrap-container {
-  display: flex;
-  gap: 100px;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1158px) {
+    display: flex;
+    /* justify-content: space-between; */
+  }
 }
 
 /* Booking Section 
@@ -1004,24 +1020,47 @@ body {
 
 .booking {
   background-color: #191c26;
+  height: 412px;
   /* width: calc(50% - 15px); */
-  margin-right: 80px;
-  margin-left: -20px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin-left: -13px;
+    padding-left: 30px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 592px;
+    padding-left: 10px;
+  }
 }
 
 .booking-title {
   color: var(--primary-white-color);
-  padding-bottom: 35px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    padding-left: 0px;
+  }
 }
 
 .booking-wrap {
-  display: flex;
-  gap: 20px;
+  /* width: 100%; */
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.booking-form {
 }
 
 .booking-field {
   position: relative;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .booking-input,
@@ -1036,13 +1075,22 @@ body {
 }
 
 .booking-input {
-  width: 270px;
-  height: 24px;
+  width: 360px;
+  height: 45px;
+  padding-top: 7px;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 240px;
+  }
 }
 
 .booking-label {
   position: absolute;
-  top: -10px;
+  top: 1px;
   color: var(--primary-gray-color);
   font-weight: 600px;
   font-size: 11px;
@@ -1067,13 +1115,30 @@ body {
 }
 
 .booking-textarea {
-  width: 100%;
+  width: 360px;
+  height: 85px;
   resize: none;
+  padding-top: 15px;
+  margin-top: 30px;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 690px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 512px;
+  }
 }
 
 .booking-button {
   color: var(--primary-white-color);
+  width: 125px;
+  margin-left: 125px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0px;
+  }
 }
 /* Contacts Section */
 /* .contacts-wrap-container {
@@ -1081,35 +1146,61 @@ body {
   justify-content: space-evenly;
 } */
 
-/* .contacts {
-  background-color: #191c26;
-  background-image: url(../images/contacts-bg.png);
-  background-repeat: no-repeat;
-  background-position: right;
-} */
+.contacts {
+  margin-left: 15px;
+  height: 460px;
+  padding-top: 80px;
+
+  @media screen and (min-width: 1158px) {
+    height: 300px;
+    margin-left: 0px;
+  }
+}
 
 .contacts-title {
   color: var(--primary-white-color);
+  padding-left: 100px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0px;
+  }
+}
+
+.contact-flex {
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    display: flex;
+    justify-content: first baseline;
+    gap: 180px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    padding-top: 20px;
+    display: block;
+    justify-content: center;
+    gap: 0px;
+  }
 }
 
 .contacts-address {
   font-style: normal;
-  padding-top: 40px;
-  padding-bottom: 70px;
+  padding-top: 12px;
+  padding-bottom: 55px;
 }
 
 .contacts-list {
 }
 
 .contacts-item {
+  padding-bottom: 15px;
 }
 
 .contacts-link {
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 20px; */
   color: var(--primary-gray-color);
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;

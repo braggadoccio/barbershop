@@ -54,6 +54,8 @@ body {
 
   @media screen and (min-width: 1158px) {
     width: 1158px;
+    /* padding-left: 13px;*/
+    padding-right: 0px;
   }
 }
 
@@ -996,9 +998,11 @@ body {
   }
 
   @media screen and (min-width: 1158px) {
-    /* margin: 0 auto; */
+    margin-left: -85px;
     max-width: 1600px;
     background-position: right;
+    background-size: 50%;
+    /* gap: 350px; */
   }
 }
 
@@ -1008,6 +1012,8 @@ body {
 
   @media screen and (min-width: 1158px) {
     display: flex;
+    gap: 150px;
+    padding-top: 40px;
     /* justify-content: space-between; */
   }
 }
@@ -1030,8 +1036,9 @@ body {
   }
 
   @media screen and (min-width: 1158px) {
-    width: 592px;
+    width: 500px;
     padding-left: 10px;
+    padding-top: 10px;
   }
 }
 
@@ -1090,7 +1097,7 @@ body {
 
 .booking-label {
   position: absolute;
-  top: 1px;
+  top: 5px;
   color: var(--primary-gray-color);
   font-weight: 600px;
   font-size: 11px;
@@ -1153,7 +1160,7 @@ body {
 
   @media screen and (min-width: 1158px) {
     height: 300px;
-    margin-left: 0px;
+    padding-top: 10px;
   }
 }
 
@@ -1163,6 +1170,10 @@ body {
 
   @media screen and (min-width: 768px) {
     padding-left: 0px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    padding-bottom: 10px;
   }
 }
 
@@ -1186,6 +1197,10 @@ body {
   font-style: normal;
   padding-top: 12px;
   padding-bottom: 55px;
+
+  @media screen and (min-width: 1158px) {
+    padding-bottom: 60px;
+  }
 }
 
 .contacts-list {

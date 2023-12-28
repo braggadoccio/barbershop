@@ -197,11 +197,12 @@ body {
 }
 
 .header-navigation {
-  display: flex;
+  /* display: flex; */
   /* padding-top: 10px;
   padding-left: 8px; */
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1158px) {
+    display: flex;
     align-items: center;
     /* justify-content: space-between;*/
   }
@@ -1502,26 +1503,36 @@ body {
 
 /* Hamburger Menu Open */
 .menu-toggle {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 
-  margin-left: auto;
+  margin-left: 278px;
+  margin-top: -32px;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
-  color: var(--primary-white-color);
+  /* fill: var(--primary-white-color); */
+  color: currentColor;
 
   @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1158px) {
     display: none;
   }
 }
 
 .menu-icon {
   fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
 }
 
 /* Hamburger Menu Navigations and Close Icon */
@@ -1546,8 +1557,12 @@ body {
   transform: translateX(0);
 }
 
+.mob-menu-list {
+  margin-bottom: -25px;
+}
+
 .mob-menu-item {
-  margin-bottom: 32px;
+  margin-bottom: 25px;
 }
 
 .mob-menu-link {
@@ -1570,7 +1585,7 @@ body {
 .mob-address {
   /* address doesn't inherit font style */
   font-style: normal;
-  margin-bottom: 32px;
+  margin-bottom: -50px;
 }
 
 .mob-address-link {
@@ -1616,4 +1631,9 @@ body {
 
 .mob-social-icon {
   fill: currentColor;
+}
+
+.mob-button {
+  width: 194px;
+  height: 40px;
 }

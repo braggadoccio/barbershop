@@ -40,28 +40,36 @@ body {
 
 /* General Styles width: 1280px; width: 420px;*/
 .container {
-  margin-left: 15px;
+  @media screen and (max-width: 727px) {
+    margin-left: 15px;
+    margin-right: 38px;
+    /* padding-left: 20px;
+  padding-right: 30px; */
+    /* margin: 0 auto; */
+    width: 428px;
+  }
+  /* margin-left: 15px;
   margin-right: 38px;
   /* padding-left: 20px;
   padding-right: 30px; */
-  /* margin: 0 auto; */
-  width: 428px;
+  /* margin: 0 auto; 
+  width: 428px; */
   /* border: 2px solid red; */
 
   /* @media screen and (min-width: 428px) {
     width: 428px;
   } */
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1157px) {
     width: 768px;
     margin-left: 30px;
     /* padding-right: 20px; */
   }
 
-  @media screen and (min-width: 1158px) {
+  @media screen and (max-width: 1200px) {
     width: 1158px;
-    margin-left: 100px;
-    /* margin-right: 100px; */
+    margin-left: 80px;
+    padding-right: 0px;
   }
 }
 
@@ -92,10 +100,10 @@ body {
     padding-bottom: 90px;
   }
 
-  /* @media screen and (min-width: 1158px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }*/
+  @media screen and (min-width: 1158px) {
+    /* width: 100%;
+    margin-right: -50px; */
+  }
 }
 
 /* General Elements: remove bullet points in lists */
@@ -206,19 +214,21 @@ body {
   @media screen and (min-width: 768px) {
     margin-left: 8px;
   }
+
+  @media screen and (min-width: 1158px) {
+    margin-left: 0px;
+  }
 }
 
 .header-navigation {
   display: flex;
   align-items: center;
   /* padding-top: 10px;
-  padding-left: 8px;
+  padding-left: 8px;*/
 
-  @media screen and (min-width: 1158px) {
-    display: flex;
-    
-    /* justify-content: space-between;
-  }*/
+  /* @media screen and (min-width: 1158px) {
+    margin-left: -20px;
+  } */
 }
 
 .header-logo {
@@ -243,7 +253,7 @@ body {
   @media screen and (min-width: 1158px) {
     display: flex;
     gap: 40px;
-    padding-left: 30px;
+    padding-left: -4px;
   }
 }
 
@@ -269,7 +279,7 @@ body {
 
   @media screen and (min-width: 1158px) {
     display: block;
-    padding-left: 80px;
+    padding-left: 60px;
     color: var(--primary-white-color);
   }
 
@@ -299,7 +309,7 @@ body {
 
   @media screen and (min-width: 1158px) {
     display: block;
-    margin-left: 100px;
+    /* margin-left: -100px; */
     color: var(--primary-white-color);
     background-color: transparent;
   }
@@ -348,7 +358,7 @@ body {
       linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 92%;
+    background-size: 93%;
     /* Desktop x2 */
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -379,7 +389,7 @@ body {
   }
 
   @media screen and (min-width: 1158px) {
-    margin-left: -105px;
+    margin-left: 6px;
   }
   /*width: 100px;
   display: flex;
@@ -625,11 +635,11 @@ body {
   padding-left: 6px;
 
   @media screen and (min-width: 768px) {
-    padding-left: 10px;
+    padding-left: 0px;
   }
 
   @media screen and (min-width: 1158px) {
-    padding-left: 110px;
+    padding-left: 10px;
   }
 }
 
@@ -770,7 +780,7 @@ body {
   }
 
   @media screen and (min-width: 1158px) {
-    /* margin-left: 523px; */
+    margin-left: 523px;
   }
 }
 
@@ -1061,7 +1071,7 @@ body {
 
   @media screen and (min-width: 768px) {
     /* margin-top: -80px; */
-    margin-left: 40px;
+    margin-left: 28px;
   }
 
   @media screen and (min-width: 1158px) {
@@ -1132,7 +1142,7 @@ body {
   }
 
   @media screen and (min-width: 1158px) {
-    margin-left: -85px;
+    margin-left: -40px;
     max-width: 1600px;
     background-position: right;
     background-size: 50%;
@@ -1148,7 +1158,7 @@ body {
 
   @media screen and (min-width: 1158px) {
     display: flex;
-    gap: 150px;
+    gap: 165px;
     padding-top: 40px;
     /* justify-content: space-between; */
   }
@@ -1168,8 +1178,8 @@ body {
   /* width: calc(50% - 15px); */
 
   @media screen and (min-width: 768px) {
-    /* width: 100%; */
-    margin-left: -13px;
+    /* width: 180%; */
+    margin-left: -30px;
     padding-left: 30px;
   }
 
